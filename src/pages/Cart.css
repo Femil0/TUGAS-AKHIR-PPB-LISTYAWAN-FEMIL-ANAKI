@@ -1,0 +1,175 @@
+/* Styling untuk Shopping Cart yang lebih teratur dan kompak */
+
+.cart-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.cart-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #333;
+  text-align: center;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cart-item-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.cart-item-price,
+.cart-item-quantity {
+  font-size: 14px; /* Menurunkan ukuran font */
+  color: #666;
+  margin-top: 5px;
+}
+
+.remove-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px; /* Membuat tombol lebih kecil */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px; /* Menurunkan ukuran font */
+  margin-top: 8px;
+}
+
+.remove-btn:hover {
+  background-color: #d32f2f;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h3 {
+  font-size: 18px; /* Menurunkan ukuran font */
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.checkout-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px; /* Membuat tombol lebih kecil */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Menurunkan ukuran font */
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.checkout-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Gaya untuk selector quantity */
+.quantity-selector {
+  margin-top: 15px;
+}
+
+.quantity-selector label {
+  font-size: 14px;
+  color: #555;
+  margin-right: 10px;
+}
+
+.quantity-selector input {
+  width: 50px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Responsif untuk tampilan lebih baik */
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 15px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-image {
+    margin-bottom: 15px;
+  }
+
+  .remove-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .checkout-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+
+/* Styling untuk QR Code Payment */
+.qr-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.qr-container img {
+  max-width: 200px; /* Menyesuaikan ukuran QR */
+  height: auto;
+}
+
+.cart-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

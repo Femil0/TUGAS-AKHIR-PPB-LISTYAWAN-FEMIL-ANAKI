@@ -1,0 +1,58 @@
+/* About.css */
+
+.about-container {
+  padding: 40px;
+  background-color: #f3f4f6;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.about-logo {
+  margin-bottom: 30px;
+}
+
+.about-logo-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; /* Membuat logo berbentuk lingkaran */
+  border: 5px solid #333; /* Menambahkan border pada logo */
+  padding: 10px; /* Memberikan jarak di dalam border */
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-logo-img:hover {
+  transform: scale(1.1); /* Efek zoom-in pada logo saat hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan pada logo saat hover */
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-description {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.about-description:hover {
+  color: #0066cc; /* Mengubah warna teks saat hover */
+  cursor: pointer;
+}
+
+.about-container p {
+  text-align: center;
+  padding: 0 20px;
+}

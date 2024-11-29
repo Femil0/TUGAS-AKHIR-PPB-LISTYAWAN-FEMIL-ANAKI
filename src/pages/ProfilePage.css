@@ -1,0 +1,151 @@
+/* ProfilePage.css */
+
+/* Kontainer utama untuk halaman profil */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Vertikal center */
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  position: relative;
+}
+
+/* Gaya untuk notifikasi login */
+.notification {
+  padding: 15px;
+  width: 100%;
+  max-width: 500px; /* Menetapkan lebar maksimum untuk notifikasi */
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slideDown 0.5s ease-out; /* Animasi muncul dari atas */
+  overflow-wrap: break-word; /* Agar teks tidak meluber keluar */
+  word-wrap: break-word; /* Menangani kata-kata panjang */
+}
+
+.notification.success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.notification.error {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Animasi untuk notifikasi muncul dari atas */
+@keyframes slideDown {
+  from {
+    top: -100px; /* Mulai dari luar atas layar */
+  }
+  to {
+    top: 20px; /* Posisi akhir di bagian atas layar */
+  }
+}
+
+/* Gaya untuk kartu login */
+.login-card {
+  background-color: #f1f1f1;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #ddd; /* Border untuk login */
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: -70px;
+}
+
+.login-header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.login-body input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #2e2f2e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #141514;
+}
+
+/* Gaya untuk kartu profil */
+.profile-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #ddd; /* Border untuk profil */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px; /* Jarak setelah notifikasi */
+}
+
+/* Memastikan gambar profil berada di tengah */
+.profile-picture-container {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.logout-btn {
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.logout-btn:hover {
+  background-color: #e53935;
+}

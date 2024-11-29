@@ -1,38 +1,60 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Main Layout */
+main {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center; /* Center the cards */
+}
+
+/* Titles */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center; /* Center title */
+  color: #222;
+}
+
+/* Search Input */
+input {
+  width: 300px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #444;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* App Container */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  min-height: 100vh;
 }

@@ -1,0 +1,73 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Slightly increased for a smoother look */
+  overflow: hidden;
+  width: 280px; /* Increased width for a larger card */
+  margin: 20px; /* Added more margin for better spacing */
+  cursor: pointer;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transform transition */
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.card-image {
+  width: 100%;
+  height: 220px; /* Fixed height for consistent image size */
+  object-fit: contain; /* Ensures the entire image fits without cropping */
+  background-color: #f9f9f9; /* Optional background to separate image */
+  padding: 15px; /* Added padding for better visual balance */
+}
+
+.card-content {
+  padding: 15px 10px; /* Increased padding for more breathing room */
+}
+
+.card-brand {
+  font-weight: bold;
+  font-size: 18px; /* Larger font size for brand emphasis */
+  color: #333; /* Darker color for better readability */
+  margin-bottom: 5px;
+}
+
+.card-title {
+  font-size: 16px; /* Slightly larger for better readability */
+  color: #555; /* Darker shade */
+  margin: 5px 0;
+  text-decoration: none; /* Ensure no underline */
+}
+
+.card-color {
+  font-size: 14px; /* Slightly larger */
+  color: #888;
+  margin-bottom: 10px;
+  text-decoration: none; /* Ensure no underline */
+}
+
+.card-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-final-price {
+  color: #e53935; /* A vibrant red for better visibility */
+  font-weight: bold;
+  font-size: 20px; /* Larger font for emphasis */
+}
+
+.card-original-price {
+  text-decoration: line-through;
+  font-size: 14px; /* Increased font size */
+  color: #aaa;
+  margin-top: 5px;
+}
+
+/* Ensure no underline on links in cards */
+.card a {
+  text-decoration: none;  /* Remove underline from links */
+}

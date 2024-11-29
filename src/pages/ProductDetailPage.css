@@ -1,0 +1,107 @@
+/* Tambahkan font family untuk seluruh halaman */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling untuk halaman detail produk */
+  .product-detail-page {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  /* Judul utama dengan font yang lebih besar dan lebih tebal */
+  .product-detail-page h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Container untuk gambar dan informasi produk */
+  .product-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  
+  /* Gambar produk dengan ukuran yang lebih kecil dan border-radius */
+  .product-detail-image {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Info produk dengan font yang lebih menarik dan tekstur yang bersih */
+  .product-detail-info {
+    max-width: 500px;
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Menyusun setiap informasi dalam paragraf terpisah */
+  .product-detail-info p {
+    margin-bottom: 15px;
+  }
+  
+  /* Deskripsi produk dengan justify dan font yang lebih nyaman dibaca */
+.product-description {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify; /* Menyusun teks menjadi rata kiri-kanan */
+    font-size: 16px;
+    color: #444;
+    line-height: 1.8;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Gaya tombol add to cart dengan animasi hover */
+  .add-to-cart {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Gaya untuk selector quantity */
+.quantity-selector {
+    margin-top: 15px;
+  }
+  
+  .quantity-selector label {
+    font-size: 16px;
+    color: #555;
+    margin-right: 10px;
+  }
+  
+  .quantity-selector input {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  

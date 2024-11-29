@@ -1,0 +1,101 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  position: sticky; /* Make sure navbar sticks to top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* To keep navbar on top */
+  font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+}
+
+/* Logo styling */
+.navbar-logo {
+  margin-right: 20px; /* Menambahkan jarak antara logo dan search box */
+}
+
+.navbar-logo img {
+  height: auto;
+  width: 250px;  /* Ukuran logo */
+  object-fit: contain;  /* Menjaga proporsi gambar */
+}
+
+/* Styling for the search box */
+.navbar-search {
+  flex-grow: 1; /* Membuat search box tumbuh untuk mengisi ruang yang tersisa */
+  display: flex;
+  justify-content: flex-start; /* Menjaga posisi search box di sebelah kiri */
+}
+
+.search-box {
+  padding: 8px 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  width: 100%;  /* Membuat lebar search box menyesuaikan dengan ruang yang ada */
+  font-size: 14px;
+  height: 40px;
+  margin-top: 13px;
+  font-family: 'Poppins', sans-serif; /* Menambahkan font Poppins pada search box */
+}
+
+/* Styling for the navbar icons */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  margin-left: 20px; /* Menambahkan jarak antar ikon */
+  color: #333; /* Menambahkan warna untuk ikon */
+  transition: color 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins pada ikon navbar */
+}
+
+.navbar-icon:hover {
+  color: #007bff; /* Mengubah warna ikon saat hover */
+}
+
+/* Styling for Cart Icon Badge */
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+/* Category Navigation Bar */
+.navbar-category {
+  display: flex;
+  justify-content: center;
+  background-color: #e9ecef;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif; /* Menambahkan font Poppins pada navbar kategori */
+}
+
+.navbar-category-item {
+  margin: 0 20px;
+  font-size: 20px; /* Ukuran font lebih besar */
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Menambahkan font Poppins pada item kategori */
+}
+
+.navbar-category-item:hover {
+  color: #007bff;
+}
