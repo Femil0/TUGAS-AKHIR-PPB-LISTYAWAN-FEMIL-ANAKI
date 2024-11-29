@@ -1,5 +1,5 @@
 <p align="center">
-  <strong>LISTYAWAN FEMIL ANAKI</strong><br>
-  <em>21120122140109</em><br>
+  <h1>LISTYAWAN FEMIL ANAKI</h1>
+  <h3>21120122140109</h3>
   <h2>TUGAS AKHIR PRAKTIKUM PPB</h2>
 </p>
